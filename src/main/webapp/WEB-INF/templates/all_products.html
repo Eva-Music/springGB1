@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Spring MVC Students</title>
+</head>
+<body>
+<h1>Список продуктов</h1>
+<table>
+    <thead>
+    <tr>
+        <td>ID</td>
+        <td>Наименование</td>
+        <td>Цена</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="s : ${products}">
+
+        <td th:text="${s.id}"></td>
+        <td th:text="${s.title}"></td>
+        <td th:text="${s.cost}"></td>
+        <td> <a th:href="@{'/products/edit/' + ${s.id}}">Редактировать</a> </td>
+    </tr>
+    </tbody>
+</table>
+
+<a th:href="@{/home}">На Главную страницу</a>
+
+</body>
+</html>
