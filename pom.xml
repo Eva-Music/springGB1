@@ -14,7 +14,7 @@
 <!--        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
 <!--        <maven.compiler.source>1.9</maven.compiler.source>-->
 <!--        <maven.compiler.target>1.9</maven.compiler.target>-->
-        <jetty.version>9.2.26.v20180806</jetty.version>
+        <jetty.version>9.4.34.v20201102</jetty.version>
     </properties>
 
     <dependencies>
